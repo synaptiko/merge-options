@@ -1,7 +1,7 @@
 import test from 'ava';
-import mergeOptions from '..';
+import mergeOptions from '../index.mjs';
 
-const defineProtoProperty = (obj, value) => Object.defineProperty(obj, '__proto__', {
+const defineProtoProperty = (object, value) => Object.defineProperty(object, '__proto__', {
 	value,
 	writable: true,
 	enumerable: true,

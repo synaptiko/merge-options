@@ -1,5 +1,5 @@
 import test from 'ava';
-import mergeOptions from '..';
+import mergeOptions from '../index.mjs';
 
 test('ignore `undefined` Option Objects', t => {
 	t.deepEqual(mergeOptions(undefined), {});
